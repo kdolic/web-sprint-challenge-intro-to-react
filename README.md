@@ -30,11 +30,20 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+- React has become one of the most commonly used libraries for building applications today. It is built to solve the issue with complex use of state on the DOM. It gives the developer a virtual DOM to render (not the real DOM). It does the minimum amount of DOM operations for getting the new state (easier on the DOM)
+
 1. Describe component state.
+
+- Itt is a special-built object that allows components to define and manage own data. Components cannot pass data with state (props can do this), but they can define and manage it INTERNALLY. Use setState() to update the current state of the component. Change in the state happens based on user-input, triggering an event. State only hold the initial information for the component. When state changes, REACT gets notified and re-renders the specific part of the DOM where state was updated or modified. Need to use a React hook to use state. useState() imported at the top of the file.
+
 
 1. Describe props.
 
+- props refers to properties which are used to pass data between various React components. The data from React can only flow in one direction (ex: parent --> child). First we'll get some data from the parent component and provide the data to a child component's 'prop' attribute. Then pass data with props likes we're giving an argument to a function of the child component. We would then utilize dot notation to access the prop data and render it within the child component.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+- side effect is outside the current functions scope that is/was being run or executed. Anything that effects or changes outside. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
