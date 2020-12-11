@@ -12,7 +12,8 @@ const StyledCard = styled.div`
 
      .card {
          font-size: 1.8rem;
-         background-color: whitesmoke;
+         border-radius: 20px;
+         background-color: #fffaf1;
      }
 
      .cardImg {
@@ -23,6 +24,19 @@ const StyledCard = styled.div`
          padding-bottom: 10px;
          border-radius: 20px;
          font-size: 1.4rem;
+     }
+
+     .btn {
+         font-size: 1.5rem;
+         background-color: #7cbc6c;
+         border-radius: 20px;
+         color: whitesmoke;
+         width: 200px;
+         height: 5vh;
+         margin-bottom: 15px;
+         &:hover {
+             opacity:.8;
+         }
      }
 `;
 
@@ -45,6 +59,9 @@ export default function Character(props) {
                                 <CardText tag='h3'>Species: {character.species}</CardText>
                                 <CardText tag='h3'>Gender: {character.gender}</CardText>
                                 <CardText tag='h3'>Origin: {character.origin.name}</CardText>
+                                <Button className='btn'>
+                                    Learn More
+                                </Button>
                             </CardBody>
                             </Card>
                     </StyledCard>
